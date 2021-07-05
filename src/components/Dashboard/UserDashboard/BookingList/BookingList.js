@@ -15,7 +15,7 @@ const BookingList = () => {
     const [isUpdated, setIsUpdated] = useState(false);
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/bookingList?email=${user.email}`)
+        axios.get(`https://whispering-fortress-28180.herokuapp.com/bookingList?email=${user.email}`)
         .then(res => setBookings(res.data))
     },[user.email, isUpdated])
 
@@ -31,7 +31,7 @@ const BookingList = () => {
           .then( wantDelete => {
             if (wantDelete) {
                 const loading = toast.loading('deleting...Please wait!')
-                axios.delete(`http://localhost:5000/deleteOrder/${id}`)
+                axios.delete(`https://whispering-fortress-28180.herokuapp.com/deleteOrder/${id}`)
                 .then(res => {
                     toast.dismiss(loading)
                     if(res){

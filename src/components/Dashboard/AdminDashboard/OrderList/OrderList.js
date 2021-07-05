@@ -10,13 +10,13 @@ const OrderList = () => {
     const [isUpdated, setIsUpdated] = useState(false);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/orders')
+        axios.get('https://whispering-fortress-28180.herokuapp.com/orders')
         .then(res => setOrders(res.data))
     },[isUpdated])
 
     const handleAction = (id, status) => {
         setIsUpdated(true)
-        axios.patch(`http://localhost:5000/statusUpdate/${id}`, {status: status })
+        axios.patch(`https://whispering-fortress-28180.herokuapp.com/statusUpdate/${id}`, {status: status })
         .then(res => res.data && setIsUpdated(false))
     }
     

@@ -68,7 +68,7 @@ const CheckoutForm = () => {
           img: img,
           price: price
         }
-        axios.post('http://localhost:5000/addOrder', orderData)
+        axios.post('https://whispering-fortress-28180.herokuapp.com/addOrder', orderData)
         .then(res => {
             toast.dismiss(loading);
             if(res.data === true){

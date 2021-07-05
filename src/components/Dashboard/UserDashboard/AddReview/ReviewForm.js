@@ -15,7 +15,7 @@ const ReviewForm = ({setIsUpdated}) => {
     const [review, setReview] = useState({});
     const {name, address, description} = review;
     useEffect(() => {
-        axios(`http://localhost:5000/userReview/${id}`)
+        axios(`https://whispering-fortress-28180.herokuapp.com/userReview/${id}`)
         .then(res => {
             setReview(res.data[0]);
         })
@@ -28,7 +28,7 @@ const ReviewForm = ({setIsUpdated}) => {
             reviewData.email = review.email || email;
             reviewData.img = review.img || img;
         if(id){
-            axios.patch(`http://localhost:5000/updateReview/${id}`, reviewData)
+            axios.patch(`https://whispering-fortress-28180.herokuapp.com/updateReview/${id}`, reviewData)
             .then(res => {
                 if(res){
                     toast.dismiss(loading);
@@ -46,7 +46,7 @@ const ReviewForm = ({setIsUpdated}) => {
             })
         }else {
             setIsUpdated(false)
-            axios.post('http://localhost:5000/addReview', reviewData)
+            axios.post('https://whispering-fortress-28180.herokuapp.com/addReview', reviewData)
             .then(res => {
                 if(res){
                     setIsUpdated(true)

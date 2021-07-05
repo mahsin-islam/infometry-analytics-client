@@ -28,7 +28,7 @@ const AddService = ({edit, setEdit, services}) => {
         }
 
         if(edit){
-            axios.patch(`http://localhost:5000/updateService/${edit}`, serviceInfo)
+            axios.patch(`https://whispering-fortress-28180.herokuapp.com/updateService/${edit}`, serviceInfo)
             .then(res =>{
                 toast.dismiss(loading)
                 if( data.name === name  && 
@@ -42,7 +42,7 @@ const AddService = ({edit, setEdit, services}) => {
                 setEdit(null)
             })
         }else{
-            axios.post('http://localhost:5000/addService', serviceInfo)
+            axios.post('https://whispering-fortress-28180.herokuapp.com/addService', serviceInfo)
             .then(res => {
                 toast.dismiss(loading)
                 if(res.data){

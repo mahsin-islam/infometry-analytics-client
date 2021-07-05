@@ -16,7 +16,7 @@ const Dashboard= () => {
     const [title, setTitle] = useState('Infometry Analytics')
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/admin?email=${user.email}`)
+        axios.get(`https://whispering-fortress-28180.herokuapp.com/admin?email=${user.email}`)
         .then(res => {
             if(res.data.length > 0){
                 setAdmin(true)

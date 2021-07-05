@@ -10,14 +10,14 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 const TestMonials = () => {
     const [testiMonials, setTestiMonials] = useState([])
     // useEffect(() => {
-    //     fetch('http://localhost:5000/reviews')
+    //     fetch('https://whispering-fortress-28180.herokuapp.com/reviews')
     //         .then(res => res.json())
     //         .then(data => {
     //             setTestiMonials(data);
     //         })
     // }, [])
     useEffect(() => {
-        fetch('http://localhost:5000/reviews')
+        fetch('https://whispering-fortress-28180.herokuapp.com/reviews')
         .then(res => res.json())
         .then(data => {
             setTestiMonials(data);

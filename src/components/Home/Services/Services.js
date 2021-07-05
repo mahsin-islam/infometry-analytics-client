@@ -9,12 +9,12 @@ const Services = () => {
     const [services, setServices] = useState([])
     
     // useEffect(() => {
-    //     axios.get('http://localhost:5000/services')
+    //     axios.get('https://whispering-fortress-28180.herokuapp.com/services')
     //     .then(res => setServices(res.data))
     // }, [services])
 
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://whispering-fortress-28180.herokuapp.com/services')
         .then(res => res.json())
         .then(data => {
             setServices(data);
