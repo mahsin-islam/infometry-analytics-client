@@ -1,0 +1,274 @@
+.pb-70 {
+    padding-bottom: 30px
+}
+
+.pt-100, .ptb-100 {
+    padding-top: 80px
+}
+
+.scientist-area {
+    position: relative; 
+    z-index: 1
+}
+
+.scientist-area.bg-color:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    right: 0;
+    background-color: #f1f8fb;
+    height: 247px
+}
+
+.single-scientist-box {
+    text-align: center;
+    margin-bottom: 30px;
+    transition: .5s
+}
+
+.single-scientist-box .image {
+    position: relative;
+    z-index: 1
+}
+
+.single-scientist-box .image:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 83%;
+    transition: .5s;
+    border-radius: 5px 5px 0 0;
+    background-image: url('../../../images/shape1.png');
+    /* background-image: url('../../../images/quote.png'); */
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.single-scientist-box .content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 0 0 5px 5px
+}
+
+.single-scientist-box .content h3 {
+    margin-bottom: 5px;
+    font-size: 25px
+}
+
+.single-scientist-box .content span {
+    color: #6b6b84;
+    font-size: 16px;
+    font-weight: 600
+}
+
+.single-scientist-box .content .social {
+    padding-left: 0;
+    list-style-type: none;
+    margin-top: 13px;
+    margin-bottom: 0
+}
+
+.single-scientist-box .content .social li {
+    display: inline-block;
+    margin-left: 3px;
+    margin-right: 3px
+}
+
+.single-scientist-box .content .social li a {
+    display: block;
+    background-color: #fff;
+    border: 1.2px solid #ece4da;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    line-height: 37px;
+    color: #6b6b84
+}
+
+.single-scientist-box .content .social li a:hover {
+    background-color: #ff5d22;
+    border-color: #ff5d22;
+    color: #fff
+}
+
+.single-scientist-box:hover {
+    transform: translateY(-10px)
+}
+
+.single-scientist-box:hover .image:before {
+    height: 80%
+}
+
+.col-lg-3:nth-child(2) .single-scientist-box .image:before, .col-lg-3:nth-child(4) .single-scientist-box .image:before, .col-lg-3:nth-child(6) .single-scientist-box .image:before, .col-lg-3:nth-child(8) .single-scientist-box .image:before, .col-lg-3:nth-child(10) .single-scientist-box .image:before {
+    background-image: url('../../../images/shape2.png')
+}
+
+.scientist-section-title .sub-title {
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #ff5d22;
+    font-weight: 700;
+    font-size: 15px
+}
+
+.scientist-section-title .sub-title img {
+    margin-right: 5px;
+    animation-name: rotateme;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear
+}
+
+.scientist-section-title h2 {
+    margin-bottom: 12px;
+    font-size: 44px
+}
+
+.scientist-section-title p {
+    margin-bottom: 20px
+}
+
+.scientist-section-title p:last-child {
+    margin-bottom: 0
+}
+
+.scientist-section-title .default-btn {
+    margin-top: 5px
+}
+
+.single-scientist-item {
+    margin-bottom: 30px;
+    border-radius: 5px 5px 0 0;
+    text-align: center
+}
+
+.single-scientist-item img {
+    width: 100%;
+    border-radius: 5px 5px 0 0
+}
+
+.scientist-box-list {
+    padding-right: 15px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 10px
+}
+
+.scientist-box-list .single-scientist-item {
+    margin-bottom: 20px
+}
+
+.scientist-box-list .col-lg-6:first-child .single-scientist-item {
+    padding-right: 30px
+}
+
+.scientist-box-list .col-lg-6:nth-child(2) .single-scientist-item {
+    padding-right: 20px
+}
+
+.scientist-box-list .col-lg-6:nth-child(3) .single-scientist-item {
+    padding-left: 20px;
+    margin-top: -100px
+}
+
+.single-scientist-item-box {
+    text-align: center;
+    margin-bottom: 30px;
+    transition: .5s
+}
+
+.single-scientist-item-box .image {
+    position: relative
+}
+
+.single-scientist-item-box .image .social {
+    padding-left: 0;
+    list-style-type: none;
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0
+}
+
+.single-scientist-item-box .image .social li {
+    display: inline-block;
+    margin-left: 3px;
+    margin-right: 3px
+}
+
+.single-scientist-item-box .image .social li a {
+    display: block;
+    background-color: #fff;
+    border: 1.2px solid #ece4da;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    line-height: 37px;
+    color: #6b6b84
+}
+
+.single-scientist-item-box .image .social li a:hover {
+    background-color: #ff5d22;
+    border-color: #ff5d22;
+    color: #fff
+}
+
+.single-scientist-item-box .content {
+    margin-top: 25px;
+    border-radius: 0 0 5px 5px
+}
+
+.single-scientist-item-box .content h3 {
+    margin-bottom: 5px;
+    font-size: 23px
+}
+
+.single-scientist-item-box .content span {
+    color: #ff5d22;
+    font-size: 16px;
+    font-weight: 600
+}
+
+.single-scientist-item-box:hover .image .social {
+    opacity: 1;
+    visibility: visible;
+    bottom: 20px
+}
+
+.vector-shape4 {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1
+}
+
+.vector-shape4 img {
+    animation: movebounce 5s linear infinite
+}
+
+.vector-shape5 {
+    position: absolute;
+    left: 15%;
+    bottom: -7%;
+    z-index: -1
+}
+
+.vector-shape5 img {
+    animation-name: rotateme;
+    animation-duration: 350s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear
+}
